@@ -9,14 +9,8 @@ using TechTalk.SpecFlow.Assist;
 namespace SeleniumPOMWalkthrough.BDD
 {
     [Binding]
-    public class AP_SigninSteps
+    public class AP_SigninSteps : AP_SharedSteps
     {
-        public AP_Website<ChromeDriver> AP_Website { get; } = new AP_Website<ChromeDriver>();
-        private Credentials credentials;
-
-        [BeforeScenario("@Example")]
-        //public void 
-
 
         [Given(@"I am on the signin page")]
         public void GivenIAmOnTheSigninPage()
